@@ -34,10 +34,14 @@
   @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(1.4)} }
 
   .hero-logo {
-    width: 130px; height: 130px; object-fit: contain;
-    position: relative; z-index: 1; margin-bottom: 1rem;
-    filter: drop-shadow(0 0 24px rgba(0,141,255,0.5));
-  }
+  width: 180px; /* Prueba con este tamaño */
+  height: auto; 
+  object-fit: contain;
+  position: relative; 
+  z-index: 1; 
+  margin-bottom: 1.5rem;
+  filter: drop-shadow(0 0 30px rgba(0,141,255,0.5));
+}
   .hero-name {
     font-family: 'Orbitron', sans-serif;
     font-size: clamp(3rem, 12vw, 7rem);
@@ -71,13 +75,7 @@
     background: rgba(7,8,15,0.90); backdrop-filter: blur(14px);
     border-bottom: 1px solid rgba(0,141,255,0.12);
   }
-  .nav-brand { display: flex; align-items: center; gap: 10px; }
-.nav-brand img { 
-  width: 40px; 
-  height: 40px; 
-  object-fit: contain; 
-  filter: drop-shadow(0 0 8px rgba(0,141,255,0.6)); 
-}
+  .nav-brand img { width: 36px; height: 36px; object-fit: contain; filter: drop-shadow(0 0 6px rgba(0,141,255,0.4)); }
   .nav-logo { font-family: 'Orbitron', sans-serif; font-size: 1.1rem; font-weight: 900; color: #008dff; }
   .nav-links { display: flex; gap: 1.5rem; }
   .nav-links a { font-size: 14px; color: #9090b0; text-decoration: none; font-weight: 500; transition: color 0.2s; cursor: pointer; }
